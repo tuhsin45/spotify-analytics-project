@@ -1,0 +1,42 @@
+[2025-09-02 20:52:41] Starting Spotify data preprocessing pipeline...
+[2025-09-02 20:52:41] Successfully loaded 149,860 records from data/spotify_history.csv
+[2025-09-02 20:52:41] All required columns present
+[2025-09-02 20:52:41] Missing values summary:
+reason_start    143
+reason_end      117
+dtype: int64
+[2025-09-02 20:52:42] Filled 143 missing values in reason_start with 'Unknown'
+[2025-09-02 20:52:42] Filled 117 missing values in reason_end with 'Unknown'
+[2025-09-02 20:52:42] Data cleaning completed. Rows: 149860 -> 149860
+[2025-09-02 20:52:42] Standardized shuffle to boolean type
+[2025-09-02 20:52:42] Standardized skipped to boolean type
+[2025-09-02 20:52:42] Converted ms_played to numeric type
+[2025-09-02 20:52:42] Cleaned text formatting in track_name
+[2025-09-02 20:52:42] Cleaned text formatting in artist_name
+[2025-09-02 20:52:42] Cleaned text formatting in album_name
+[2025-09-02 20:52:42] Cleaned text formatting in platform
+[2025-09-02 20:52:42] Cleaned text formatting in reason_start
+[2025-09-02 20:52:42] Cleaned text formatting in reason_end
+[2025-09-02 20:52:42] Timestamp range: 2013-07-08 to 2024-12-15 (4178 days)
+[2025-09-02 20:52:42] Detected 568 outliers in ms_played using IQR method
+[2025-09-02 20:52:42] Capped 20 extremely high ms_played values to 15 minutes
+[2025-09-02 20:52:42] Removed 1782 exact duplicate rows
+[2025-09-02 20:52:43] Found 3325 potential duplicate plays (same track, same minute)
+[2025-09-02 20:52:43] WARNING: Found 144849 records with unexpected platforms: ['windows', 'android', 'cast to device', 'mac']
+[2025-09-02 20:52:43] WARNING: 158 tracks marked as skipped but played >4 minutes
+[2025-09-02 20:52:43] Top 5 reason_start: {'trackdone': np.int64(75698), 'fwdbtn': np.int64(53458), 'clickrow': np.int64(10849), 'appload': np.int64(3712), 'backbtn': np.int64(2183)}
+[2025-09-02 20:52:43] Top 5 reason_end: {'trackdone': np.int64(76182), 'fwdbtn': np.int64(53133), 'endplay': np.int64(9736), 'logout': np.int64(4357), 'backbtn': np.int64(2153)}
+[2025-09-02 20:52:43] 
+==================================================
+[2025-09-02 20:52:43] DATA SUMMARY REPORT
+[2025-09-02 20:52:43] ==================================================
+[2025-09-02 20:52:43] Total Records: 148078
+[2025-09-02 20:52:43] Date Range: 2013-07-08 to 2024-12-15
+[2025-09-02 20:52:43] Unique Tracks: 16527
+[2025-09-02 20:52:43] Unique Artists: 4113
+[2025-09-02 20:52:43] Total Listening Hours: 5274.0
+[2025-09-02 20:52:43] Platform Distribution: {'android': np.int64(139002), 'iOS': np.int64(3048), 'cast to device': np.int64(2981), 'windows': np.int64(1690), 'mac': np.int64(1176), 'web player': np.int64(181)}
+[2025-09-02 20:52:43] Skip Rate: 5.3%
+[2025-09-02 20:52:43] Avg Play Duration Seconds: 128.2
+[2025-09-02 20:52:44] Cleaned data saved to: data/spotify_cleaned.csv
+[2025-09-02 20:52:44] Preprocessing pipeline completed successfully!

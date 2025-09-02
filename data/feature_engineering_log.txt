@@ -1,0 +1,42 @@
+[2025-09-02 20:52:56] Starting feature engineering pipeline...
+[2025-09-02 20:52:56] Creating temporal features...
+[2025-09-02 20:52:56] Created 13 temporal features
+[2025-09-02 20:52:56] Creating listening behavior features...
+[2025-09-02 20:52:56] Created 11 listening behavior features
+[2025-09-02 20:52:56] Creating user behavior features...
+[2025-09-02 20:52:59] Created 6 user behavior features
+[2025-09-02 20:52:59] Creating content features...
+[2025-09-02 20:52:59] Created 8 content features
+[2025-09-02 20:52:59] Creating session features...
+[2025-09-02 20:53:01] Created 6 session features
+[2025-09-02 20:53:01] Creating context features...
+[2025-09-02 20:53:01] Created 9 context features
+[2025-09-02 20:53:01] Creating advanced ML features...
+[2025-09-02 20:53:01] Created 10 advanced ML features
+[2025-09-02 20:53:01] 
+==================================================
+[2025-09-02 20:53:01] FEATURE ENGINEERING SUMMARY
+[2025-09-02 20:53:01] ==================================================
+[2025-09-02 20:53:01] Total Features: 82
+[2025-09-02 20:53:01] Temporal Features: 16
+[2025-09-02 20:53:01] Behavioral Features: 23
+[2025-09-02 20:53:01] User Features: 6
+[2025-09-02 20:53:01] Content Features: 23
+[2025-09-02 20:53:01] Session Features: 6
+[2025-09-02 20:53:01] Total Records: 148078
+[2025-09-02 20:53:01] 
+Data Types Distribution:
+[2025-09-02 20:53:01]   float64: 23 columns
+[2025-09-02 20:53:01]   object: 18 columns
+[2025-09-02 20:53:01]   bool: 18 columns
+[2025-09-02 20:53:01]   int64: 10 columns
+[2025-09-02 20:53:01]   int32: 4 columns
+[2025-09-02 20:53:01]   int8: 3 columns
+[2025-09-02 20:53:01]   datetime64[ns]: 1 columns
+[2025-09-02 20:53:01]   UInt32: 1 columns
+[2025-09-02 20:53:01]   category: 1 columns
+[2025-09-02 20:53:01]   category: 1 columns
+[2025-09-02 20:53:01]   category: 1 columns
+[2025-09-02 20:53:01]   timedelta64[ns]: 1 columns
+[2025-09-02 20:53:08] Feature-engineered data saved to: data/spotify_features.csv
+[2025-09-02 20:53:08] Feature engineering pipeline completed successfully!
